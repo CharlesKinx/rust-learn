@@ -7,7 +7,7 @@ struct User {
     isalive: bool
 }
 
-
+mod mot;
 fn main() {
     // println!("Hello, world!");
     // test();
@@ -20,15 +20,16 @@ fn main() {
     // owner_parameter(s);
     // println!("{s}");
 
-    let user1 = User{
-        username : String::from("whd"),
-        email : String::from("664410795@qq.com"),
-        age : 24,
-        isalive : true
-    };
-    dbg!(&user1);
-    println!("{:#?}",&user1);
-
+    // let user1 = User{
+    //     username : String::from("whd"),
+    //     email : String::from("664410795@qq.com"),
+    //     age : 24,
+    //     isalive : true
+    // };
+    // dbg!(&user1);
+    // println!("{:#?}",&user1);
+    
+    crate::mot::t2();
     //vector_test();
 }
 
