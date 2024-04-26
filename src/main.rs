@@ -1,4 +1,13 @@
 
+#[derive(Debug)]
+struct User {
+    username: String,
+    email: String,
+    age: u32,
+    isalive: bool
+}
+
+
 fn main() {
     // println!("Hello, world!");
     // test();
@@ -11,19 +20,27 @@ fn main() {
     // owner_parameter(s);
     // println!("{s}");
 
-    
-    vector_test();
+    let user1 = User{
+        username : String::from("whd"),
+        email : String::from("664410795@qq.com"),
+        age : 24,
+        isalive : true
+    };
+    dbg!(&user1);
+    println!("{:#?}",&user1);
+
+    //vector_test();
 }
 
 fn hashmap_test() {
     use std::collections::HashMap;
-    let mut hash = HashMap::new();
+    //let mut hash = HashMap::new();
 
 }
 
 fn vector_test() {
     let mut v:Vec<i32> = Vec::new();
-    for num in (0..5) {
+    for num in 0..5 {
         v.push(num);
     }
 
