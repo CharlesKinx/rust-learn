@@ -1,3 +1,5 @@
+use crate::gener::trait_learn::Content;
+
 
 #[derive(Debug)]
 struct User {
@@ -8,6 +10,8 @@ struct User {
 }
 
 mod mot;
+mod gener;
+
 fn main() {
     // println!("Hello, world!");
     // test();
@@ -29,7 +33,19 @@ fn main() {
     // dbg!(&user1);
     // println!("{:#?}",&user1);
     
+    let va = gener::add(4,6);
+    println!("{va}");
     crate::mot::t2();
+    
+    let wb = gener::trait_learn::WeiBo{
+        title:String::from("微博"),
+        content:String::from("微博内容"),
+        author:String::from("作者"),
+    };
+    gener::trait_learn::notify(&wb);
+    gener::trait_learn::notify1(&wb);
+    let sw = wb.getContent();
+    println!("{sw}");
     //vector_test();
 }
 
