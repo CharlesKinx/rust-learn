@@ -67,7 +67,7 @@ pub fn notify3(item: &(impl Content + TimePub)) {}
  * 函数返回中的 impl Trait
  */
 pub fn get_wei_bo() -> impl Content {
-    WeiBo {
+    WeiBo {  
         title:String::from("qas"),
         content:String::from("qw"),
         author:String::from("ws"),
