@@ -11,7 +11,7 @@ struct User {
 
 mod mot;
 mod gener;
-
+mod itor;
 fn main() {
     // println!("Hello, world!");
     // test();
@@ -46,6 +46,8 @@ fn main() {
     gener::trait_learn::notify1(&wb);
     let sw = wb.getContent();
     println!("{sw}");
+
+
     //vector_test();
 }
 
