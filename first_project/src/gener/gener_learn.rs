@@ -16,7 +16,7 @@ mod tests {
         println!("test1{s1}");
     }
     fn print_it<T: Debug + 'static>( input: &T) {
-        println!( "'static value passed in is: {:?}", *input );
+        println!( "'static value passed in is: {:?}", input );
     }
     #[test]
     fn test1() {
