@@ -136,5 +136,25 @@ arc1                    exercises/smart_pointers/arc1.rs                Done
 cow1                    exercises/smart_pointers/cow1.rs                Done
 ```
 
+## 2024/5/01 Day5
+
+今天看了Deref、Drop、Rc、Arc，以及关联函数
+
+方法定义在结构体中，如果参数没有self，称该方法为关联函数，使用::来调用，感觉Rust中的关联函数有点像java中的静态方法一样...
+
+Rust编译器会在变量作用域结束的地方调用Drop，进行垃圾回收...这个还是挺厉害的，不过drop方法是借用了目标的可变引用...Rust的Deref还是挺好用的....
+
+```rust
+std::mem::drop 可以使用该drop方法获取到所有权，进而进行释放
+```
+
+
+
+今天的难点在于：特征.... : (..T_T...明天在好好学学特征吧...太难了
+
+明天在看看Cell以及RefCell...
+
+
+
 
 
