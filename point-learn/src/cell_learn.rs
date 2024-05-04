@@ -83,4 +83,14 @@ mod tests {
 
         closure_learn()
     }
+
+
+    #[test]
+    fn quote_test() {
+        let mut s = String::from("value");
+        let s1 = &s;
+        println!("{}",s1);
+
+        let s2 = &mut s;
+    }
 }

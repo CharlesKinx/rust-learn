@@ -37,6 +37,8 @@ impl <T> Deref for MyBox<T> {
 mod dr_learn;
 use std::mem::drop;
 mod cell_learn;
+mod life_cycle;
+mod closure_learn;
 fn main() {
     let y = MyBox::new(10);
     println!("{}",*y);
@@ -52,4 +54,11 @@ fn main() {
     println!("running");
 
     print_cell();
+
+
+    let mut s = 23;
+    let s1 = &s;
+    println!("{s1}");
+    s += 2;
+
 }
